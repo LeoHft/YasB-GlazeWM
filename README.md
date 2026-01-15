@@ -2,30 +2,34 @@
 
 # 1) Install JetBrains Mono Font
 ```
-https://www.jetbrains.com/lp/mono/
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
 ```
 
 # 2) Install YasB
 ```
 https://github.com/amnweb/yasb/wiki/Installation
 ```
+Launch YasB and copy Past the YasB config files into your YasB config folder under `C:\Users\username\.config\yasb`
 
-Copy Past the YasB config files into your YasB config folder under `C:\Users\username\.config\yasb`
+> You can update your wallpapers folder on line 153  
+> image_path: "C:\\Users\\username\\Pictures"  # TODO Example path to folder with images
+
 
 # 3) Install GlazeWM without Zebar
 ```
 https://github.com/glzr-io/GlazeWM/releases
 ```  
-Do not run GlazeWM yet, it will crash.  
-Copy Past the GlazeWM config files into you GlazeWm config folder under `C:\Users\username\.glzr\glazewm`
+Launch GlazeWM, it will crash, but it will also create a new config folder.  
+Copy Past the GlazeWM config files into the GlazeWm config folder under `C:\Users\username\.glzr\glazewm`.
+Relaunch GlazeWM after that.
 
 # 4) Run YasB and GlazeWM
 
 
 # 5) Sreenshots  
 ## Normal use
-![alt text](image.png)
+![alt text](images/image.png)
 
 
 ## Power menu  
-![alt text](image-1.png)
+![alt text](images/image-1.png)
