@@ -431,6 +431,47 @@
     color: var(--mauve);
     margin-right: 4px;
 }
+.battery-widget .icon {
+    color: var(--mauve);
+    margin-right: 4px;
+}
+.battery-widget .label {
+    min-width: 34px;
+    max-width: 34px;
+}
+.battery-widget {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.battery-widget .widget-container {
+    border-radius: 8px;
+}
+.battery-widget .widget-container .icon.status-critical {
+    color: var(--red);
+}
+.battery-widget .widget-container .icon.status-low {
+    color: var(--peach);
+}
+.battery-widget .widget-container .icon.status-medium {
+    color: var(--yellow);
+}
+.battery-widget .widget-container .icon.status-high {
+    color: var(--mauve);
+}
+.battery-widget .widget-container .icon.status-full {
+    color: var(--mauve);
+}
+.battery-widget .widget-container .icon.status-charging {
+    color: var(--mauve);
+}
+.battery-widget .widget-container .icon.status-charging.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
 
 
 /* WIFI Setting */
