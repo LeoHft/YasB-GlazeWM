@@ -38,7 +38,6 @@ bars:
         [
           "home",
           "wallpaper",
-          "update_check",
           "cpu",
           "memory",
           "battery",
@@ -53,7 +52,6 @@ bars:
         [
           "clock",
           "volume",
-          "wifi",
           "pomodoro",
           "power_menu"
         ]
@@ -68,7 +66,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf03e</span>"
-      image_path: "C:\\Users\\HP\\Pictures\\Wallpapers"
+      image_path: "C:\\Users\\username\\Pictures\\Wallpapers"
       change_automatically: false # Automatically change wallpaper
       update_interval: 60
       gallery:
@@ -98,10 +96,10 @@ widgets:
     options:
       label: "<span>\udb80\udf5c</span>"
       menu_list:
-        - { title: "Téléchargements", path: "C:\\Users\\HP\\Downloads"}
-        - { title: "Documents", path: "C:\\Users\\HP\\Documents"}
-        - { title: "Photos", path: "C:\\Users\\HP\\Pictures"}
-        - { title: "Videos", path: "C:\\Users\\HP\\Videos"}
+        - { title: "Téléchargements", path: "C:\\Users\\username\\Downloads"}
+        - { title: "Documents", path: "C:\\Users\\username\\Documents"}
+        - { title: "Photos", path: "C:\\Users\\username\\Pictures"}
+        - { title: "Videos", path: "C:\\Users\\username\\Videos"}
       system_menu: true
       power_menu: false
       blur: true
@@ -117,8 +115,8 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "<span>\udb80\udf87</span> {title}"
-      label_alt: "<span>\udb80\udf87</span> {title}"
+      label: "<span>\udb80\udf87</span> Media"
+      label_alt: "<span>\udb80\udf87</span> Media"
       hide_empty: true
       callbacks:
        on_left: "toggle_media_menu"
@@ -292,41 +290,6 @@ widgets:
         left: 0
         bottom: 0
         right: 8
-  wifi:
-      type: "yasb.wifi.WifiWidget"
-      options:
-        label: "<span>{wifi_icon}</span>"
-        label_alt: "{wifi_name} {wifi_strength}%"
-        update_interval: 5000
-        callbacks:
-          on_left: "exec cmd.exe /c start ms-settings:network"
-          on_middle: "do_nothing"
-          on_right: "toggle_label"
-        container_padding:
-          top: 0
-          left: 0
-          bottom: 0
-          right: 0
-        wifi_icons: [
-          "\udb82\udd2e",  # Icon for 0% strength
-          "\udb82\udd1f",  # Icon for 1-20% strength
-          "\udb82\udd22",  # Icon for 21-40% strength
-          "\udb82\udd25",  # Icon for 41-80% strength
-          "\udb82\udd28"   # Icon for 81-100% strength
-        ]
-  update_check:
-    type: "yasb.update_check.UpdateCheckWidget"
-    options:
-      winget_update:
-        enabled: true
-        label: "<span>\uf0ab</span>{count}"
-        interval: 180
-        exclude: []
-      windows_update:
-        enabled: false
-        label: "<span>\uf0ab</span>{count}"
-        interval: 240
-        exclude: []
   pomodoro:
     type: "yasb.pomodoro.PomodoroWidget"
     options:
